@@ -8,12 +8,12 @@ def promedio(arr)
 end
 
 def compara_arrays(arr, b)
-    x = promedio(arr)
-    y = promedio(b)
-    if x<y
-        return y
-    elsif y<x
-        return x
+    prom1 = promedio(arr)
+    prom2 = promedio(b)
+    if prom1<prom2
+        return prom2
+    elsif prom1>prom2
+        return prom1
     else
         puts 'son iguales'
     end
